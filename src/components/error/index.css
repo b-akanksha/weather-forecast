@@ -1,0 +1,30 @@
+.error {
+    height: 100vh;
+    width: 100%;
+    position: relative;
+}
+
+.error-container {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.error-img {
+    width: 300px;
+    height: 300px;
+    display: block;
+}
+
+.search {
+    width: 70%;
+    margin: 0 auto;
+    text-align: center;
+}
+.search p {
+    font-size: 30px;
+    font-weight: 600;
+}

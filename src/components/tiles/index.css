@@ -1,0 +1,11 @@
+.tiles {
+    border-radius: 16px;
+    background: #FFF;
+    padding: 16px;
+}
+
+.tiles__title {
+    color: Grey;
+    font-weight: bold;
+    font-size: 16px;
+}
