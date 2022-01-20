@@ -1,16 +1,24 @@
 {
   "files": {
-    "main.css": "/weather-forecast/static/css/main.073c9b0a.css",
-    "main.js": "/weather-forecast/static/js/main.76b606e8.js",
+    "main.css": "/weather-forecast/static/css/main.4f7a8cfa.css",
+    "main.js": "/weather-forecast/static/js/main.6b7d0126.js",
     "static/js/787.1a626c8e.chunk.js": "/weather-forecast/static/js/787.1a626c8e.chunk.js",
-    "static/media/logo.svg": "/weather-forecast/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
+    "static/media/loading.gif": "/weather-forecast/static/media/loading.95f077a86e6c1863329a.gif",
+    "static/media/humidity.png": "/weather-forecast/static/media/humidity.d9f1834f9a8cc209019c.png",
+    "static/media/wind.png": "/weather-forecast/static/media/wind.06bcdb8881a7dd665329.png",
+    "static/media/error.gif": "/weather-forecast/static/media/error.9f74b9397da4b5d762ed.gif",
+    "static/media/typing.gif": "/weather-forecast/static/media/typing.879dfdb2516529b7ec5e.gif",
+    "static/media/clouds.png": "/weather-forecast/static/media/clouds.b9a187440c6c127890af.png",
     "index.html": "/weather-forecast/index.html",
-    "main.073c9b0a.css.map": "/weather-forecast/static/css/main.073c9b0a.css.map",
-    "main.76b606e8.js.map": "/weather-forecast/static/js/main.76b606e8.js.map",
+    "static/media/explore.svg": "/weather-forecast/static/media/explore.46f5bb6905dae22016100504332a86a9.svg",
+    "static/media/arrow_up.svg": "/weather-forecast/static/media/arrow_up.5f956e114911856731a25d93a0742dcd.svg",
+    "static/media/arrow_down.svg": "/weather-forecast/static/media/arrow_down.26529ef4f1dfc9591447f4d69ceb3b4e.svg",
+    "main.4f7a8cfa.css.map": "/weather-forecast/static/css/main.4f7a8cfa.css.map",
+    "main.6b7d0126.js.map": "/weather-forecast/static/js/main.6b7d0126.js.map",
     "787.1a626c8e.chunk.js.map": "/weather-forecast/static/js/787.1a626c8e.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.073c9b0a.css",
-    "static/js/main.76b606e8.js"
+    "static/css/main.4f7a8cfa.css",
+    "static/js/main.6b7d0126.js"
   ]
 }
