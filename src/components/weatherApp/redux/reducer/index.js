@@ -16,12 +16,14 @@ export const weatherReducer = (state = initialState, {type, payload}) => {
         case WeatherApp.SET_DATA:
             return {
                 ...state,
-                data: payload
+                data: payload,
+                error: null,
             };
         case WeatherApp.SET_ERROR:
             return {
                 ...state,
-                error: payload
+                error: payload,
+                data: null,
             };
         default: return state;
     }

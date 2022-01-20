@@ -52,8 +52,11 @@ const WeatherApp = () => {
   };
 
   const time = new Date();
-  const timeArray = data?.forecast?.forecastday[0]?.hour?.filter(item => time.toString().split(' ')[4] < String(item.time.split(' ')[1]));
-  const timeToDisplay = timeArray.length > 5 ? timeArray.slice(0,5) : timeArray;
+  const timeArray = data?.forecast?.forecastday[0]?.hour?.filter(
+    (item) => time.toString().split(" ")[4] < String(item.time.split(" ")[1])
+  );
+  const timeToDisplay =
+    timeArray.length > 5 ? timeArray.slice(0, 5) : timeArray;
   return (
     <div className="weather-page">
       <div className="weather-grid container1">
@@ -105,13 +108,16 @@ const WeatherApp = () => {
             </p>
             <div className="content">
               <p className="content__text text_bold text_color">
-                {getVisibility(data?.forecast?.forecastday[0]?.day?.avgvis_miles)}
+                {getVisibility(
+                  data?.forecast?.forecastday[0]?.day?.avgvis_miles
+                )}
               </p>
             </div>
           </Tiles>
           <Tiles title="Humidity" className="grid__item">
             <p className="content__highlight ">
-              {data?.forecast?.forecastday[0]?.day?.avghumidity} <small>%</small>
+              {data?.forecast?.forecastday[0]?.day?.avghumidity}{" "}
+              <small>%</small>
             </p>
             <div className="content">
               <p className="content__text text_bold text_color">
@@ -134,10 +140,14 @@ const WeatherApp = () => {
       <div className="weather-grid container2">
         <b>Search</b> <SearchBar />
         <div className="graphic-today place">
-        <h2>{data?.location?.name}</h2>
-        <small>&nbsp;{` (${data?.location?.region}, ${data?.location?.country})`}</small>
+          <h2>{data?.location?.name}</h2>
+          <small>
+            &nbsp;{` (${data?.location?.region}, ${data?.location?.country})`}
+          </small>
         </div>
-        <p><b>{data?.location?.localtime?.split(" ")[0]}</b></p>
+        <p>
+          <b>{data?.location?.localtime?.split(" ")[0]}</b>
+        </p>
         <div className="today-content">
           <h1 className="today__title">TODAY</h1>
           <div className="graphic-today">
@@ -172,8 +182,8 @@ const WeatherApp = () => {
             </div>
           </div>
           <div className="graphic-today content-grid">
-            {timeToDisplay.map((item) => (
-              <div className="today-content tile__small">
+            {timeToDisplay.map((item, index) => (
+              <div className="today-content tile__small" key={index}>
                 {item?.time?.split(" ")[1]}
                 <img src={item?.condition?.icon} alt="weather" />
                 <p>{item?.temp_c}`C</p>
