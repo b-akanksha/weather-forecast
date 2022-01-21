@@ -13,8 +13,6 @@ import "./index.css";
 const WeatherApp = () => {
   const { data } = useSelector((state) => state.weather);
 
-  console.log("process.env", process.env);
-
   const getVisibility = (miles) => {
     if (miles <= 2) {
       return "Poor visibility";

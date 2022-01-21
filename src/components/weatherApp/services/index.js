@@ -4,6 +4,7 @@ export const getWeatherService = async (city) => {
     headers: {
       "Content-Type": "application/json",
       "Access-Control-Allow-Origin": "*",
+      "Access-Control-Allow-Headers": "X-Requested-With"
       // 'Content-Type': 'application/x-www-form-urlencoded',
     },
   });
